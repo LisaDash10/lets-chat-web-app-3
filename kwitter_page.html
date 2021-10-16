@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Chat Corner</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="kwitter_page.css">
+<script src="kwitter_page.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()"> Logout</button>
+            <center>
+                <h1 class="header">
+                    Chat Corner
+                    <sup>
+                        <img src="m2.png">
+                    </sup>
+                </h1>
+                <h2>Room:<span id="room" style="color: black;"></span></h2>
+                <hr>
+                <div id="output"></div>
+            </center>
+        </div>
+
+        <div class="input_div_msg_page">
+            <center>
+                <label>Send a message:</label>
+                <input type="text" id="msg" class="form-control" placeholder="Type your message here"></input>
+                <br>
+                <button id="send" class="glyphicon glyphicon-send btn btn-success" onclick="send()"> Send</button>
+            </center>
+        </div>
+
+    </body>
+
+</html>
