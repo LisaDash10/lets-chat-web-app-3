@@ -1,17 +1,18 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyA3O6xfGzvJPnxqvVMkB7oeiK3rlhVqYBs",
-    authDomain: "lets-chat-project-e10ab.firebaseapp.com",
-    databaseURL: "https://lets-chat-project-e10ab-default-rtdb.firebaseio.com",
-    projectId: "lets-chat-project-e10ab",
-    storageBucket: "lets-chat-project-e10ab.appspot.com",
-    messagingSenderId: "680274294402",
-    appId: "1:680274294402:web:2e46c7efaf9e19725f269b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebaseConfig = {
+  apiKey: "AIzaSyCRhMQ2fNINKTt4Y8iL3kdCfD8qv2Gqsmo",
+  authDomain: "chat-corner-database.firebaseapp.com",
+  databaseURL: "https://chat-corner-database-default-rtdb.firebaseio.com",
+  projectId: "chat-corner-database",
+  storageBucket: "chat-corner-database.appspot.com",
+  messagingSenderId: "653862774824",
+  appId: "1:653862774824:web:b20bd56328dfb9f02fad1d"
+};
+
+// Initialize Firebase
+//app = initializeApp(firebaseConfig);
 
   user_name = localStorage.getItem("user_name");
-  document.getElementById("user_name").innerHTML = " Welcome "+ user_name +"!";
+  document.getElementById("username").innerHTML =  user_name;
 
   function add_room() {
     room_name = document.getElementById("room_name").value;
